@@ -3,7 +3,7 @@ class Surfshield < Formula
   homepage "https://github.com/dnovitski/surfshield"
   # Prebuilt binary from the GitHub release, so installing needs no Rust toolchain or crates.io.
   url "https://github.com/dnovitski/surfshield/releases/download/v0.1.0/surfshield-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "0f9e24733e960e939f14ebb197d2b41a296be284d77870c52edc4e9d0b9af810"
 
   depends_on arch: :arm64
   depends_on :macos
