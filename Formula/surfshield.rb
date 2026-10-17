@@ -1,14 +1,15 @@
 class Surfshield < Formula
   desc "Safe, policy-controlled web access for AI agents (MCP server and CLI)"
   homepage "https://github.com/dnovitski/surfshield"
-  url "https://github.com/dnovitski/surfshield/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "efeeb59c614dad6638e6637274566ee2fcf65de67ae29e50cdb200fa1a92adbb"
-  head "https://github.com/dnovitski/surfshield.git", branch: "main"
+  # Prebuilt binary from the GitHub release, so installing needs no Rust toolchain or crates.io.
+  url "https://github.com/dnovitski/surfshield/releases/download/v0.1.0/surfshield-0.1.0-aarch64-apple-darwin.tar.gz"
+  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
-  depends_on "rust" => :build
+  depends_on arch: :arm64
+  depends_on :macos
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "surfshield"
     pkgshare.install "surfshield.example.toml"
   end
 
