@@ -2,7 +2,7 @@ class Surfshield < Formula
   desc "Safe, policy-controlled web access for AI agents (MCP server and CLI)"
   homepage "https://github.com/dnovitski/surfshield"
   url "https://github.com/dnovitski/surfshield/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c950ff59ab1494c45ec7fb78f091f0604f77ac9a5454557ba95f06b486a5d3b4"
+  sha256 "efeeb59c614dad6638e6637274566ee2fcf65de67ae29e50cdb200fa1a92adbb"
   head "https://github.com/dnovitski/surfshield.git", branch: "main"
 
   depends_on "rust" => :build
